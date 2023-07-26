@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/queries.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class = "split left">
+        <div class = "questions">
+
+            <button class = "q1 set" id = "q1-btn">
+                Find the current location of the teacher
+            </button>
+    
+            <button class = "q2 set" id = "q2-btn">
+                Get list of branches for the given subject
+            </button>
+    
+            <button class = "q3 set" id = "q3-btn">
+                Get list of teachers for the given subject
+            </button>
+    
+            <button class = "q4 set" id = "q4-btn">
+                Get the tasks of teachers
+            </button>
+    
+            <button class = "q5 set" id = "q5-btn">
+                Find the location of teacher at desired time
+            </button>
+    
+            <button class = "q6 set" id = "q6-btn">
+                Get location of the place
+            </button>
+    
+            <button class = "q7 set" id = "q7-btn">
+                Find the location of a branch
+            </button>
+    
+            <button class = "q8 set" id = "q8-btn">
+                Find teacher from area of interest
+            </button>
+    
+            <button class = "q9 set" id = "q9-btn">
+    
+            </button>
+    
+            <button class = "q10 set" id = "q10-btn">
+    
+            </button>
+        </div>
+        
+
+    </div>
+
+    <div class = "split right">
+        <div class = "right-top">
+
+
+            <div class="dropdown-container" id = "q1-input" style="display: none;">
+                <h1 class="heading">Enter Teacher Name:</h1>
+                <input type="text" id="filterInput1" class = "input-text" placeholder="Type to filter..." autocomplete="off">
+                <div class="dropdown-list" id="dropdownList1"></div></br>
+                <button class=" s-btn q1-input-submit" id = "submitButton1">Submit</button>
+            </div>
+
+            <div class="dropdown-container" id = "q2-input" style="display: none;">
+                <h1 class="heading">Enter Subject Name:</h1>
+                <input type="text" id="filterInput2" class = "input-text" placeholder="Type to filter..." autocomplete="off">
+                <div class="dropdown-list" id="dropdownList2"></div></br>
+                <button class="s-btn q2-input-submit" id = "submitButton2">Submit</button>
+            </div>
+
+            <div class="dropdown-container" id = "q3-input" style="display: none;">
+                <h1 class="heading">Enter Subject Name:</h1>
+                <input type="text" id="filterInput3" class = "input-text" placeholder="Type to filter..." autocomplete="off">
+                <div class="dropdown-list" id="dropdownList3"></div></br>
+                <button class="s-btn q3-input-submit" id = "submitButton3">Submit</button>
+            </div>
+
+            <div class="dropdown-container" id = "q4-input" style="display: none;">
+                <h1 class="heading">Enter Teacher Name:</h1>
+                <input type="text" id="filterInput4" class = "input-text" placeholder="Type to filter..." autocomplete="off">
+                <div class="dropdown-list" id="dropdownList4"></div></br>
+                <button class="s-btn q4-input-submit" id = "submitButton4">Submit</button>
+            </div>
+
+            <div class="dropdown-container" id = "q5-input" style="display: none;">
+                <h1 class="head1 heading">Enter Teacher Name:</h1>
+                <input type="text" id="filterInput5a" class = "input-text" placeholder="Type to filter..." autocomplete="off">
+                <div class="dropdown-list" id="dropdownList5a"></div>
+                <h1 class="head2 heading">Enter the day:</h1>
+                <input type="text" id="filterInput5b" class = "input-text" placeholder="Type to filter..." autocomplete="off">
+                <div class="dropdown-list" id="dropdownList5b"></div>
+                <h1 class="head3 heading">Enter the time:</h1>
+                <input type="time" id="filterInput5c" class = "input-text" min="09:00" max="18:00" autocomplete="off">
+                <button class="s-btn q5-input-submit" id = "submitButton5">Submit</button>
+            </div>
+
+            <div class="dropdown-container" id = "q6-input" style="display: none;">
+                <h1 class="heading">Enter Place Name:</h1>
+                <input type="text" id="filterInput6" class = "input-text" placeholder="Type to filter..." autocomplete="off">
+                <div class="dropdown-list" id="dropdownList6"></div></br>
+                <button class="s-btn q6-input-submit" id = "submitButton6">Submit</button>
+            </div>
+
+            <div class="dropdown-container" id = "q7-input" style="display: none;">
+                <h1 class="heading">Enter Branch Name:</h1>
+                <input type="text" id="filterInput7" class = "input-text" placeholder="Type to filter..." autocomplete="off">
+                <div class="dropdown-list" id="dropdownList7"></div></br>
+                <button class="s-btn q7-input-submit" id = "submitButton7">Submit</button>
+            </div>
+
+            <div class="dropdown-container" id = "q8-input" style="display: none;">
+                <h1 class="heading">Enter Area of Interest:</h1>
+                <input type="text" id="filterInput8" class = "input-text" placeholder="Type to filter..." autocomplete="off">
+                <div class="dropdown-list" id="dropdownList8"></div></br>
+                <button class="s-btn q8-input-submit" id = "submitButton8">Submit</button>
+            </div>
+
+            <div class="dropdown-container" id = "q9-input" style="display: none;">
+                <h1 class="heading">Enter Teacher Name:</h1>
+                <input type="text" id="filterInput9" class = "input-text" placeholder="Type to filter..." autocomplete="off">
+                <div class="dropdown-list" id="dropdownList9"></div></br>
+                <button class="s-btn q9-input-submit" id = "submitButton9">Submit</button>
+            </div>
+
+            <div class="dropdown-container" id = "q10-input" style="display: none;">
+                <h1 class="heading">Enter Teacher Name:</h1>
+                <input type="text" id="filterInput10" class = "input-text" placeholder="Type to filter..." autocomplete="off">
+                <div class="dropdown-list" id="dropdownList10"></div></br>
+                <button class="s-btn q10-input-submit" id = "submitButton10">Submit</button>
+            </div>
+
+        </div>
+        <div class = "right-bottom">
+
+        </div>
+    </div>
+
+    <script src="js/queries.js"></script>
+</body>
+</html>

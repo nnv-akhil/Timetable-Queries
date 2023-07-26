@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class = "split left">
+        <div class = "questions">
+
+            <button class = "q1 set" id = "q1-btn">
+                Register a new faculty
+            </button>
+    
+            <button class = "q2 set" id = "q2-btn">
+                Drop a faculty
+            </button>
+    
+            <button class = "q3 set" id = "q3-btn">
+                Edit faculty time table
+            </button>
+    
+            <button class = "q4 set" id = "q4-btn">
+                Register a class
+            </button>
+    
+            <button class = "q5 set" id = "q5-btn">
+                Drop a class
+            </button>
+    
+            <button class = "q6 set" id = "q6-btn">
+                Edit class time table
+            </button>
+    
+            <button class = "q7 set" id = "q7-btn">
+                Add a place
+            </button>
+    
+            <button class = "q8 set" id = "q8-btn">
+                Delete a place
+            </button>
+    
+            <button class = "q9 set" id = "q9-btn">
+                Edit a place
+            </button>
+    
+            <button class = "q10 set" id = "q10-btn">
+    
+            </button>
+        </div>
+        
+
+    </div>
+
+    <div class = "split right">
+        <div class = "right-top">
+
+
+            <div class="dropdown-container" id = "q1-input" style="display: none;">
+
+                <h1 class="heading">Enter Teacher Name:</h1>
+                <input type="text" id="filterInput1a" class = "input-text" placeholder="Enter teacher name..." autocomplete="off">
+
+                <h1 class="heading">Enter  Username:</h1>
+                <input type="text" id="filterInput1b" class = "input-text" placeholder="Enter username..." autocomplete="off">
+
+                <h1 class="heading">Enter Timetable:</h1>
+                <input type="file" id="filterInput1c" class = "input-text" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" />
+                
+                <button class=" s-btn q1-input-submit" id = "submitButton1">Submit</button>
+
+            </div>
+
+            <div class="dropdown-container" id = "q2-input" style="display: none;">
+
+                <h1 class="heading">Enter Teacher Name:</h1>
+                <input type="text" id="filterInput2" class = "input-text" placeholder="Type to filter..." autocomplete="off">
+                <div class="dropdown-list" id="dropdownList2"></div></br>
+
+                <button class="s-btn q2-input-submit" id = "submitButton2">Submit</button> 
+
+            </div>
+
+            <div class="dropdown-container" id = "q3-input" style="display: none;">
+
+                <h1 class="heading">Enter Teacher Name:</h1>
+                <input type="text" id="filterInput3a" class = "input-text" placeholder="Type to filter..." autocomplete="off">
+                <div class="dropdown-list" id="dropdownList3a"></div></br>
+
+                <h1 class="heading">Enter new Time table:</h1>
+                <input type="file" id="filterInput3b" class = "input-text" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" />
+
+                <button class="s-btn q3-input-submit" id = "submitButton3">Submit</button>
+
+            </div>
+
+            <div class="dropdown-container" id = "q4-input" style="display: none;">
+
+                <h1 class="heading">Enter Class Name:</h1>
+                <input type="text" id="filterInput4a" class = "input-text" placeholder="Enter classname..." autocomplete="off">
+                <div class="dropdown-list" id="dropdownList4a"></div></br>
+
+                <h1 class="heading">Enter time table:</h1>
+                <input id="filterInput4b" class = "input-text" type="file" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" />
+
+                <button class="s-btn q4-input-submit" id = "submitButton4">Submit</button>
+            </div>
+
+            <div class="dropdown-container" id = "q5-input" style="display: none;">
+
+                <h1 class="heading">Enter Class Name:</h1>
+                <input type="text" id="filterInput5" class = "input-text" placeholder="Type to filter..." autocomplete="off">
+                <div class="dropdown-list" id="dropdownList5"></div></br>
+
+                <button class="s-btn q5-input-submit" id = "submitButton5">Submit</button>
+
+            </div>
+
+            <div class="dropdown-container" id = "q6-input" style="display: none;">
+
+                <h1 class="heading">Enter class Name:</h1>
+                <input type="text" id="filterInput6a" class = "input-text" placeholder="Type to filter..." autocomplete="off">
+                <div class="dropdown-list" id="dropdownList6a"></div></br>
+
+                <h1 class="heading">Enter time table:</h1>
+                <input type="file" id="filterInput6b" class = "input-text" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" />
+
+                <button class="s-btn q6-input-submit" id = "submitButton6">Submit</button>
+
+            </div>
+
+            <div class="dropdown-container" id = "q7-input" style="display: none;">
+
+                <h1 class="heading">Enter place name:</h1>
+                <input type="text" id="filterInput7a" class = "input-text" placeholder="Type to filter..." autocomplete="off">
+
+                <h1 class="heading">Enter location name:</h1>
+                <input type="text" id="filterInput7b" class = "input-text" placeholder="Type to filter..." autocomplete="off">
+
+                <button class="s-btn q7-input-submit" id = "submitButton7">Submit</button>
+
+            </div>
+
+            <div class="dropdown-container" id = "q8-input" style="display: none;">
+
+                <h1 class="heading">Enter place name:</h1>
+                <input type="text" id="filterInput8" class = "input-text" placeholder="Type to filter..." autocomplete="off">
+                <div class="dropdown-list" id="dropdownList8"></div></br>
+
+                <button class="s-btn q8-input-submit" id = "submitButton8">Submit</button>
+
+            </div>
+
+            <div class="dropdown-container" id = "q9-input" style="display: none;">
+
+                <h1 class="heading">Enter place name:</h1>
+                <input type="text" id="filterInput9a" class = "input-text" placeholder="Type to filter..." autocomplete="off">
+                <div class="dropdown-list" id="dropdownList9a"></div></br>
+
+                <h1 class="heading">Enter location name:</h1>
+                <input type="text" id="filterInput9b" class = "input-text" placeholder="Enter location name" autocomplete="off">
+
+                <button class="s-btn q9-input-submit" id = "submitButton9">Submit</button>
+
+            </div>
+
+            <div class="dropdown-container" id = "q10-input" style="display: none;">
+                <h1 class="heading">Enter Teacher Name:</h1>
+                <input type="text" id="filterInput10" class = "input-text" placeholder="Type to filter..." autocomplete="off">
+                <div class="dropdown-list" id="dropdownList10"></div></br>
+                <button class="s-btn q10-input-submit" id = "submitButton10">Submit</button>
+            </div>
+
+        </div>
+        <div class = "right-bottom">
+
+        </div>
+    </div>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>
