@@ -323,7 +323,7 @@ function fun(dropdownListId, filterInputId, value) {
     var dropdownListElement = document.getElementById(dropdownListId);
     var filterInput = document.getElementById(filterInputId); // Get the input element itself
 
-    var formData = new FormData();
+    var formData =new FormData();
     formData.append("q", value); 
 
     $.ajax({
@@ -336,7 +336,7 @@ function fun(dropdownListId, filterInputId, value) {
             // Handle the response from the backend if needed
             console.log(response);
             // Assuming response is a JSON object {'teacher': 'anas', 'name': 'anas'}
-            var dropdownlist = response.result;
+            var dropdownlist = response;
 
             // Clear the existing dropdown items
             dropdownListElement.innerHTML = "";
