@@ -83,7 +83,7 @@ function query1() {
     formData.append('csv_data', timetableFile);
 
     $.ajax({
-        url: "/form1", // Replace with your Flask backend endpoint
+        url: "/admin-form1", // Replace with your Flask backend endpoint
         type: 'POST',
         data: formData,
         contentType: false,
@@ -108,7 +108,7 @@ function query2() {
     formData.append('teacher_name', teacherName);
 
     $.ajax({
-        url: "/form2",
+        url: "/admin-form2",
         type: 'POST',
         data: formData,
         contentType: false,
@@ -138,7 +138,7 @@ function query3() {
     formData.append('csv_data', timetable);
 
     $.ajax({
-        url: "/form3",
+        url: "/admin-form3",
         type: 'POST',
         data: formData,
         contentType: false,
@@ -166,7 +166,7 @@ function query4() {
     formData.append('csv_data', timetable);
 
     $.ajax({
-        url: "/form4",
+        url: "/admin-form4",
         type: 'POST',
         data: formData,
         contentType: false,
@@ -192,7 +192,7 @@ function query5() {
     formData.append('teacher_name', teacherName);
 
     $.ajax({
-        url: "/form5",
+        url: "/admin-form5",
         type: 'POST',
         data: formData,
         contentType: false,
@@ -220,7 +220,7 @@ function query6() {
     formData.append('csv_data', timetable);
 
     $.ajax({
-        url: "/form6",
+        url: "/admin-form6",
         type: 'POST',
         data: formData,
         contentType: false,
@@ -248,7 +248,7 @@ function query7() {
     formData.append('location_name', locationName);
 
     $.ajax({
-        url: "/form7",
+        url: "/admin-form7",
         type: 'POST',
         data: formData,
         contentType: false,
@@ -274,7 +274,7 @@ function query8() {
     formData.append('place_name', placeName);
 
     $.ajax({
-        url: "/form8",
+        url: "/admin-form8",
         type: 'POST',
         data: formData,
         contentType: false,
@@ -302,7 +302,7 @@ function query9() {
     formData.append('location_name', locationName);
 
     $.ajax({
-        url: "/form9",
+        url: "/admin-form9",
         type: 'POST',
         data: formData,
         contentType: false,
