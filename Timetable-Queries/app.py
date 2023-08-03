@@ -4,7 +4,7 @@ from flask import *
 
 app = Flask(__name__, static_url_path='/static', static_folder='static')
 
-@app.route('/') 
+@app.route('/')
 def home():
     return render_template('admin.html')
 
@@ -24,7 +24,7 @@ def get_dropdown_data():
     elif form_input == "admin-9":
         list_data = {'q': places}
     else:
-        list_data = {} 
+        list_data = {}
     print(form_input)
     return jsonify(result=list_data)
 
@@ -62,7 +62,7 @@ def form4():
 
     print(class_name)
     print(csv_data)
-    return "Data received successfully"x
+    return "Data received successfully"
 
 @app.route('/admin-form5', methods=['POST'])
 def form5():
