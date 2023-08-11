@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/role.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="info">
+        <div class="student">
+            <img src="../static/images/student.png" alt="Student_Image" class="s_img">
+            <a href = "/get_queries_page">
+                <button class="s_button" onclick="fun('student')">STUDENT</button>
+            </a>
+        </div>
+    
+        <div class="faculty">
+            <img src="../static/images/teacher.png" alt="Faculty_Image" class="f_img">
+            <a href = "/get_queries_page"><button class="f_button" onclick="fun('teacher')">FACULTY</button></a>
+        </div>
+    
+        <div class="coordinator">
+            <img src="../static/images/coordinator.png" alt="Coordinator_Image" class="c_img">
+            <a href = "/get_queries_page"><button class="c_button" onclick="fun('admin')">COORDINATOR</button></a>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../static/js/role.js"></script>
+   
+</body>
+</html>

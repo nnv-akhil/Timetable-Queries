@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/37f07b394f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../static/css/login.css">
+    <title>Login</title>
+</head>
+<body>
+
+    <div class="sign_in">
+
+        <div class="login"> 
+            <h1>Login</h1>
+            <!-- <form action="" method="post"> -->
+
+                <!-- <div class="email">
+                    <label for="user">Username</label><br>
+                    <input type="email" name="" required="" id="user">
+                </div> -->
+                
+                <div class="password">
+                    <label for="pwd">Password</label><br>
+                    <input type="password" name="" required="" id="pwd">
+                </div>
+                
+                <p id="fpassword" onclick="check()">Forgot password</p><br>
+
+                <button type="submit" class="submit" id = "sub" onclick="login()">SUBMIT</button>
+
+                <div id = "incorrect" style="display:none;">
+                    <p>Incorrect Password</p>
+                    <p>Try Again!!!</p>
+                </div>
+
+                <div id = "forgot" style="display:none;">
+                    <p>Contact Administrator</p>
+                </div>
+
+                <a href="/get_admin_page" style = "display:none;" id="sample"></a>
+
+            <!-- </form> -->
+
+        </div>
+       
+       
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../static/js/login.js"></script>
+    
+</body>
+</html>
